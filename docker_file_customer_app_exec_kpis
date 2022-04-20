@@ -1,0 +1,9 @@
+FROM rocker/shiny
+
+RUN install2.r -r http://cran.rstudio.com/ rgl
+
+COPY ./app.R /srv/shiny-server/customer_app_exec_kpi/app.R
+
+EXPOSE 3838
+
+CMD ["/usr/bin/shiny-server"]
