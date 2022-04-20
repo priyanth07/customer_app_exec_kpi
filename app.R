@@ -1,8 +1,11 @@
+cat("Got here 1", file=stderr())
+
 library(shinythemes)
 library(gridExtra)
 library(ggplot2)
 library(cowplot)    # for theme_minimal_hgrid()
 
+cat("Got here 2", file=stderr())
 
 server <- function(input, output, session) {
   
@@ -162,4 +165,3 @@ ui=navbarPage(
 
 shinyApp(ui = ui, server = server)
 
-#cat("Got here", file=stderr())
