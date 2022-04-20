@@ -161,3 +161,5 @@ ui=navbarPage(
 )
 
 shinyApp(ui = ui, server = server)
+
+#cat("Got here", file=stderr())
