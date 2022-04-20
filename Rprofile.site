@@ -1,0 +1,4 @@
+local({
+   options(shiny.port = 3838, shiny.host = "143.198.143.213")
+})
+
