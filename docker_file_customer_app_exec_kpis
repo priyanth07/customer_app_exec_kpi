@@ -10,6 +10,8 @@ COPY ./app.R /srv/shiny-server/customer_app_exec_kpi/app.R
 
 COPY Rprofile.site /usr/lib/R/etc/
 
+USER shiny
+
 EXPOSE 3838
 
 CMD ["/usr/bin/shiny-server"]
